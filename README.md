@@ -13,7 +13,7 @@ It is likely I will write a more thorough academic publication on the process fo
 
 ## Basic technical explanation
 
-A function is _absolutely monotonic_ if all of its derivatives are positive. In more plain terms, the curve consistently curves upwards in every sense. This is ideal for PP curves because it means that the higher the score, the more that every bit of improvement is rewarded. The parameterization presented here is guaranteed by construction to be absolutely monotonic.
+A function is [_absolutely monotonic_](https://en.wikipedia.org/wiki/Absolutely_and_completely_monotonic_functions_and_sequences) if all of its derivatives are positive. In more plain terms, the curve consistently curves upwards in every sense. This is ideal for PP curves because it means that the higher the score, the more that every bit of improvement is rewarded. The parameterization presented here is guaranteed by construction to be absolutely monotonic.
 
 Moreover, this is a 14-parameter parameterization (though in practice 6-8 parameters would be sufficient for most maps). This contrasts with simple 1-3 parameter parameterizations in that it allows for **variable curve shapes**. In practical terms, this means that, for example, a high tech map can reward more for a bare pass, and grow more slowly for higher scores, while an acc map can give very little PP for just passing, but highly reward near 100% scores.
 
@@ -77,7 +77,7 @@ $$
 pp(x) = 0.863 uexp_{2.087}(x) + 1 uexp_{43.119}(x) + 1 uexp_{56.658}(x) + 1 uexp_{62.551}(x)
 $$
 
-The Python code included includes a simple function to do this calculation for you, but you can reproduce this in any other programming language.
+The Python code in the repository includes a simple function to do this calculation for you, but you can reproduce this in any other programming language.
 
 ## Contact
 
