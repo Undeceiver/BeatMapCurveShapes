@@ -5,7 +5,9 @@ The dataset is originally sourced from [BeatLeader](https://beatleader.com/), en
 
 _**This is not a suitable difficulty estimation algorithm for maps on its own because it depends on scores.**_
 
-If you are planning to train your own difficulty estimation algorithm, you will need the map files themselves. These are way too much to include in the repository, but you can download them from Beat Saver using [BeatLeader's playlist](https://beatleader.com/playlist/ranked)
+If you are planning to train your own difficulty estimation algorithm, you will need the map files themselves. These are way too much to include in the repository, but you can download them from Beat Saver using [BeatLeader's playlist](https://beatleader.com/playlist/ranked).
+
+It is worth noting that the PP curves included here likely overfit to the scores, meaning that a difficulty estimation algorithm that looked at the maps themselves and used some form of regularisation might actually do better than what is here. In other words, use the parameterizations here as guidance and for evaluation, but consider that different parameters might be better in some cases.
 
 Apart from the code included in the repository, you can also see the results of these multi-parameter curves at https://portable.undeceiver.beatleader.pro/
 
